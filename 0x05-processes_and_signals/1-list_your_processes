@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# A Bash script that displays all running processes with a full timestamp and visual hierarchy
+# A Bash script that lists all processes with a tree format
 
-ps -eo user,lstart,command --forest
+ps -ejH
