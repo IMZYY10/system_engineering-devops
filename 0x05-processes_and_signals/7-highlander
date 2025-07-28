@@ -1,10 +1,10 @@
-#!/usr/bin/env bash
-# This script handles SIGTERM and prints a custom message.
+#!/bin/bash
+# This script ignores SIGTERM by printing a message
 
-trap "echo 'I am invincible!!!'" SIGTERM
+trap "echo I am invincible!!!" SIGTERM
 
+# Infinite loop to keep the process running
 while true
 do
-  echo "To infinity and beyond"
-  sleep 2
+    sleep 1
 done
